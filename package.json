@@ -1,0 +1,41 @@
+{
+  "name": "halveo-dashboard",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Halveo: a brand-led industrial resource intelligence dashboard and fictional portfolio case.",
+  "author": "Rafael Poles / Ruptive",
+  "license": "UNLICENSED",
+  "packageManager": "pnpm@11.25.0",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "dev": "vite",
+    "check": "tsc -p tsconfig.app.json --noEmit && tsc -p tsconfig.node.json --noEmit",
+    "build": "tsc -p tsconfig.app.json --noEmit && tsc -p tsconfig.node.json --noEmit && vite build",
+    "preview": "vite preview",
+    "test:smoke": "node scripts/smoke.mjs",
+    "capture": "node scripts/capture.mjs",
+    "cover": "node scripts/cover.mjs"
+  },
+  "dependencies": {
+    "animejs": "^4.5.0",
+    "echarts": "^6.1.0",
+    "gsap": "^3.15.0",
+    "lucide-react": "^1.47.0",
+    "motion": "^13.4.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "three": "^0.186.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/three": "^0.186.0",
+    "@vitejs/plugin-react": "^6.1.1",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.0",
+    "playwright": "1.62.1"
+  }
+}
